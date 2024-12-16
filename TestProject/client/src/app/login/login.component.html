@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-8">
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Adresa de email</mat-label>
+                  <input [(ngModel)]="email" matInput name="something">
+                </mat-form-field>
+            </form>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Parola</mat-label>
+                  <input type="password" [(ngModel)]="parola" matInput name="something">
+                </mat-form-field>
+            </form>
+    
+            <button mat-raised-button (click)="login()" >Login</button>
+            <br>
+            <br>
+            <p class="roboto-bold">{{rezultat}}</p>            
+        </div>
+    </div>
+</div>
